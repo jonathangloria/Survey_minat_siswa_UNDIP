@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">      
+<h:head>
+  <title>Survey Minat Siswa Terhadap UNDIP</title>
+  <style>
+  body {
+  background-color: #ffffff; 
+}
+a:hover { 
+  color: red
+}
+h1,h2,h3 {
+  text-align: center;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: black;
+}
+h1.title {
+  display: table;
+  margin: auto;
+  background-color: #afc4d6;
+  border-width: 4px;
+  border-style: outset;
+  border-color: #9fd1ff;
+  padding: 5px 8px;
+  letter-spacing: -.025em;
+} 
+.formTable {
+  display: table;
+}
+/* If prompt and input are in two cells of one row, the prompt will be R-aligned. */
+.formTable td:first-child {
+  text-align: right;
+}
+/* Third table cell shows the error message, so make it bold and red. Used in validation examples that have h:message. */
+.formTable td:nth-child(3) {
+  color: red;
+  font-weight: bold;
+}
+th { background-color: #afc4d6;
+     font-size: 110%;
+     font-family: Arial, Helvetica, sans-serif;
+}
+legend {
+  font-weight: bold;
+  color: black;
+  background-color: #afc4d6;
+  border: 1px solid #1a55bf;
+  padding: 3px 5px;
+  border-radius: 3px;
+}
+fieldset {
+  border-radius: 6px;
+  display: block;
+}
+input, textarea {
+  background-color: #ecedf2;
+  text-align: left;
+}
+input[type="checkbox"] {
+  background-color: transparent;  /* For IE 7-9 -- doesn't matter in FF, Chrome, or IE 10+ */
+}
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+  background-color: #9fd1ff;
+}
+input[type="text"]{
+  width:500px;
+}
+.error {
+  color: red;
+  font-weight: bold;
+}
+/* So that in Chrome and IE, the bullets are next to the text in centered lists. Already OK in Firefox. */
+[align="center"] li {
+  list-style-position: inside;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</h:head>
+
+<h:body>
+<br/>
+<div align="center">
+  <h:form>
+        <h1 class="ui-widget-header ui-corner-all">Survey Minat Siswa Terhadap UNDIP</h1><br/>
+		Selamat datang pada halaman TUGAS UTS RSBK
+		Survey Minat Siswa Terhadap UNDIP<br/><br/>
+    	<table>
+			<tr>
+				<td>Nama Depan:</td>
+				<td><h:outputText value="#{employeeBean.namaDepan}" /></td>
+			</tr>
+			<tr>
+				   <td>Nama Belakang:</td>
+				<td><h:outputText value="#{employeeBean.namaBelakang}" /></td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><h:outputText value="#{employeeBean.emailAddress}" /></td>
+			</tr>
+			<tr>
+				<td>Alamat Jalan:</td>
+				<td><h:outputText value="#{employeeBean.address}" /></td>
+			</tr>
+			<tr>
+				 <td>Kota:</td>
+				<td><h:outputText value="#{employeeBean.kota}" /></td>
+			</tr>
+			<tr>
+				<td>Negara Bagian:</td>
+				<td><h:outputText value="#{employeeBean.negara}" /></td>
+			</tr>
+			<tr>
+				<td>Kode Pos:</td>
+				<td><h:outputText value="#{employeeBean.pos}" /></td>
+			</tr>
+			<tr>
+				<td>No Telepon:</td>
+				<td><h:outputText value="#{employeeBean.mobileNumber}" /></td>
+			</tr>
+			
+			<tr>
+				<td>Tanggal Survey:</td>
+				<td><h:outputText value="#{employeeBean.tglsurvey}" /></td>
+			</tr>
+			<tr>
+				<td>Kesukaan Tentang Kampus:</td>
+				<td><h:outputText value="#{employeeBean.sukaInString}" /></td>
+			</tr>
+			<tr>
+				<td>Ketertarikan Dengan Undip:</td>
+				<td><h:outputText value="#{employeeBean.fasilitas}" /></td>
+			</tr>
+			
+			<tr>
+		  		<td>Rekomendasikan UNDIP:</td>
+				<td><h:outputText value="#{employeeBean.rekomendasi}" /></td>
+			</tr>
+			
+			
+			<tr>
+				<td>Komentar:</td>
+				<td><h:outputText value="#{employeeBean.komentar}" /></td>
+			</tr>
+			<tr>
+			</tr>
+		</table>
+	</h:form>
+</div>
+			<h3 style="color:green" align="center">TERIMA KASIH</h3>
+			<h3 align="center">Apakah anda ingin berpartisipasi lagi?</h3>
+			<h3 align="center"><a href="#">YA</a></h3> <h3 align="center"><a href="http://ec2-54-88-72-82.compute-1.amazonaws.com/">TIDAK</a></h3>
+		</h:body>	
+	</html>
