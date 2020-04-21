@@ -1,18 +1,18 @@
 # Survey_minat_siswa_UNDIP
 Tugas UTS RSBK
 
-# Instalasi:
+## Instalasi:
 1. Download project ini sebagai zip.
 2. Import project ke dalam Eclipse
 3. Jalankan payara/tomcat server
 4. Klik kanan project >> Run As >> Run on server
 5. Pada browser ketik: http://localhost:<port_no>/surveysiswa
 
-# HOMEPAGE EC2
-http://ec2-54-88-72-82.compute-1.amazonaws.com/
+## HOMEPAGE EC2
+http://ec2-3-222-87-206.compute-1.amazonaws.com/
 
-# Instance/Survey siswa
-http://ec2-52-70-95-182.compute-1.amazonaws.com:8080/surveysiswa/
+## Instance/Survey siswa
+http://ec2-52-21-17-58.compute-1.amazonaws.com:8080/surveysiswa/
 
-# An Image in Bucket S3
+## An Image in Bucket S3
 https://jo-cloud.s3.amazonaws.com/aws.png
