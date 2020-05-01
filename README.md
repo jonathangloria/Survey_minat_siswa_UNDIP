@@ -12,7 +12,7 @@ Tugas UTS RSBK
 http://ec2-3-222-87-206.compute-1.amazonaws.com/
 
 ### Instance/Survey siswa
-http://ec2-18-212-11-91.compute-1.amazonaws.com:8080/surveysiswa/
+http://ec2-54-210-94-206.compute-1.amazonaws.com:8080/surveysiswa/
 
 ### An Image in Bucket S3
 https://jo-cloud.s3.amazonaws.com/aws.png
